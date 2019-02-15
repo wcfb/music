@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@id/android:list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawSelectorOnTop="false"
+            android:scrollingCache="true"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="5dp"
+            android:gravity="center"/>
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="stop"/>
+
+    <Button
+        android:id="@+id/start"
+        android:layout_above="@id/stop"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="start"/>
+
+    <Button
+        android:id="@+id/last"
+        android:layout_toLeftOf="@id/start"
+        android:layout_alignBottom="@id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="last"/>
+
+
+    <Button
+        android:id="@+id/pause"
+        android:layout_width="wrap_content"
+        android:layout_above="@id/start"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:text="pause"/>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_toRightOf="@id/start"
+        android:layout_alignBottom="@id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="next"/>
+
+</RelativeLayout>
